@@ -1,5 +1,5 @@
 body {
-    background-image: url("./images/back.png");
+    background-image: url("/images/back.png");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sans-serif;
@@ -70,7 +70,7 @@ footer {
 }
 .footer-tab {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 0px;
     color: white;
     text-decoration: none;
 }
@@ -127,3 +127,4 @@ footer {
     align-items: flex-start;
     margin-bottom: 0;
 }
+
