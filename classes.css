@@ -1,0 +1,129 @@
+body {
+    background-image: url("./images/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+.navbar {
+    height: 8vh;
+}
+
+.logo {
+    margin-right: 4rem; 
+}
+
+.navbar ul li {
+    margin: 0.6rem; 
+    padding: 0.75rem; 
+}
+
+.icon_image {
+    height: 30px;
+    width: 30px;
+    margin-left: 3rem;
+    margin-top: 0.5rem; 
+}
+
+.bg-custom-color {
+    background-color: rgb(113, 124, 164);
+}
+
+.custom-margin {
+    margin-top: 160px;
+    margin-bottom: 150px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 0;
+    }
+        
+.card-footer {
+    width: 100%;
+}
+
+.square-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+}
+
+footer {
+    background-color: rgb(113, 124, 164);
+    padding: 20px;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+.footer-tabs {
+    list-style: none;
+    padding: 0;
+}
+.footer-tab {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+.icon_image {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  
+}
+  
+.navbar-expand-lg {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+  
+.navbar-toggler-icon {
+    padding: 8px 10px;
+}
+
+#classes-title {
+    color: black;
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+  
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.card-container h3 {
+    text-align: center;
+  }
+.card-container, .Card {
+    overflow: hidden;
+  }
+  .header {
+    margin-bottom: 5px; /* Adjust the margin as needed */
+    margin-top: 50px
+}
+
+#under-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
