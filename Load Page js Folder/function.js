@@ -1,3 +1,3 @@
-export function render(element, container) {
-    container.innerHTML = element;
+export function render(pageFunction, container) {
+    container.innerHTML = pageFunction();
 }

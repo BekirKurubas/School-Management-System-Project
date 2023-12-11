@@ -1,6 +1,5 @@
 function loadHomePage() {
-    const contentContainer = document.querySelector('.main-container');
-    contentContainer.innerHTML = `        
+    return `        
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom-color text-white">
     <div class="container-fluid ">
         <a class="navbar-brand" href="#">LMS</a>
