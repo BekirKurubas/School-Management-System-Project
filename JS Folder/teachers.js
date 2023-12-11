@@ -1,11 +1,9 @@
-function editCard() {
-    // Düzenleme fonksiyonu buraya gelecek
-    alert('Düzenleme işlemi başlatıldı.');
+function editCard() {   
+    alert('');
 }
 
-function deleteCard() {
-    // Silme fonksiyonu buraya gelecek
-    if (confirm('Bu kartı silmek istediğinizden emin misiniz?')) {
+function deleteCard() {    
+    if (confirm('')) {
         document.querySelector('.Card').remove();
     }
 }
