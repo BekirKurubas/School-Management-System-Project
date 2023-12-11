@@ -1,6 +1,5 @@
 function loadClassesPage() {
-    const contentContainer = document.querySelector('.main-container');
-    contentContainer.innerHTML = `  
+    return `  
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom-color text-white">
         <div class="container-fluid ">
             <a class="navbar-brand" href="#">LMS</a>
@@ -9,20 +8,20 @@ function loadClassesPage() {
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active text-white">
-                        <a class="nav-link text-white" href="#"><strong>Home</strong></a>
-                    </li>
-                    <li class="nav-item text-white">
-                        <a class="nav-link text-white" href="#"><strong>Classes</strong></a>
-                    </li>
-                    <li class="nav-item text-white">
-                        <a class="nav-link text-white" href="#"><strong>Teachers</strong></a>
-                    </li>
-                    <li class="nav-item text-white">
-                        <a class="nav-link text-white" href="#"><strong>Students</strong></a>
-                    </li>
-                </ul>
+            <ul class="navbar-nav">
+            <li class="nav-item active text-white">
+                <a id="home-link" class="nav-link text-white" href="#"><strong>Home</strong></a>
+            </li>
+            <li class="nav-item text-white">
+                <a id="classes-link" class="nav-link text-white" href="#"><strong>Classes</strong></a>
+            </li>
+            <li class="nav-item text-white">
+                <a id="teachers-link" class="nav-link text-white" href="#"><strong>Teachers</strong></a>
+            </li>
+            <li class="nav-item text-white">
+                <a id="students-link" class="nav-link text-white" href="#"><strong>Students</strong></a>
+            </li>
+        </ul>
             </div>
             <a href="#">
                 <img class="icon_image" src="/images/usericon.jpg" alt="">

@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     render(loadHomePage, mainContainer);
 
-    document.getElementById('home-link').addEventListener('click', () => {
+    document.getElementById('home-link').addEventListener('click', (event) => {
+        event.preventDefault();
         render(loadHomePage, mainContainer);
     });
 

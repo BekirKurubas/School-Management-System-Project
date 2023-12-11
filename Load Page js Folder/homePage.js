@@ -10,16 +10,16 @@ function loadHomePage() {
         <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active text-white">
-                    <a class="nav-link text-white" href="#"><strong>Home</strong></a>
+                    <a id="home-link" class="nav-link text-white" href="#"><strong>Home</strong></a>
                 </li>
                 <li class="nav-item text-white">
-                    <a class="nav-link text-white" href="#"><strong>Classes</strong></a>
+                    <a id="classes-link" class="nav-link text-white" href="#"><strong>Classes</strong></a>
                 </li>
                 <li class="nav-item text-white">
-                    <a class="nav-link text-white" href="#"><strong>Teachers</strong></a>
+                    <a id="teachers-link" class="nav-link text-white" href="#"><strong>Teachers</strong></a>
                 </li>
                 <li class="nav-item text-white">
-                    <a class="nav-link text-white" href="#"><strong>Students</strong></a>
+                    <a id="students-link" class="nav-link text-white" href="#"><strong>Students</strong></a>
                 </li>
             </ul>
         </div>
