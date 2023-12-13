@@ -1,7 +1,8 @@
 function loadHomePage() {
-    return `        
-    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-color text-white">
-    <div class="container-fluid ">
+    const mainContainer = document.getElementById('main-container');
+    mainContainer.innerHTML = `
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom-color text-white">
+        <div class="container-fluid ">
         <a class="navbar-brand" href="#">LMS</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +28,9 @@ function loadHomePage() {
             <img class="icon_image" src="/images/usericon.jpg" alt="">
         </a>
     </div>
-</nav>
-   
-<div>
+        </nav>
+        
+        <div>
     <div class="container custom-margin">
         <h3>Welcome Merijam</h3>
     </div>
@@ -61,26 +62,23 @@ function loadHomePage() {
                 </div>
             </div>
         </div>
-    </div>
-    
-    
-</div>   
-        <br><br><br><br><br><br><br><br><br>
-    <div class="card " style="width: 100%;" id="under-card" >
-        <div class="card-body">
-            <h3><strong>HiCoders 23/24 LMS</strong></h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    </div>
-  
-    <footer class="fixed-bottom ">
-        <ul class="footer-tabs text-white">
-            <li class="footer-tab"><a href="#" class="text-white"><strong>About Us</strong></a></li>
-            <li class="footer-tab"><a href="#" class="text-white"><strong>Contact</strong></a></li>
-        </ul>
-    </footer>
-    
+    </div>    
+</div>
+        
+<div class="card " style="width: 100%;" id="under-card" >
+<div class="card-body">
+    <h3><strong>HiCoders 23/24 LMS</strong></h3>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+</div>
+</div>
+
+<footer class="fixed-bottom ">
+<ul class="footer-tabs text-white">
+    <li class="footer-tab"><a href="#" class="text-white"><strong>About Us</strong></a></li>
+    <li class="footer-tab"><a href="#" class="text-white"><strong>Contact</strong></a></li>
+</ul>
+</footer>
     `;
 }
 
-export { loadHomePage };
+

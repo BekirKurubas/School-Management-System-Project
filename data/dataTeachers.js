@@ -1,4 +1,4 @@
-export let teachers=[
+ let teachers=[
     { id: 1,
       name: "Maria Smith",      
       description: "Fullstack Web Programming Expert!",

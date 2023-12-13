@@ -1,28 +1,39 @@
-import { render } from './Load Page js Folder/function.js';
-import { loadHomePage } from './Load Page js Folder/homePage.js';
-import { loadClassesPage } from './Load Page js Folder/classesPage.js';
-import { loadTeachersPage } from './Load Page js Folder/teachersPage.js'; 
-import { loadStudentsPage } from './Load Page js Folder/studentsPage.js';
+// app.js
+/* import { loadHomePage } from './functions/pages/homePage';
+import { loadTeachersPage } from './functions/pages/teachersPage';
+import { loadClassesPage } from './functions/pages/classesPage';
+import { loadStudentsPage } from './functions/pages/studentsPage';
+ */
+const renderPage = (pageLoaderFunction, container) => {
+    container.innerHTML = '';  // Mevcut içeriği temizle
+    pageLoaderFunction(container);  // Yeni sayfa içeriğini yükle
+};
+
 
 document.addEventListener("DOMContentLoaded", () => {
-    const mainContainer = document.querySelector('.main-container');
+    const mainContainer = document.getElementById('main-container');
 
-    render(loadHomePage, mainContainer);
+    // Ana sayfa varsayılan olarak yüklenir
+    renderPage(loadHomePage, mainContainer);
 
+    // Diğer sayfalar için olay dinleyiciler
     document.getElementById('home-link').addEventListener('click', (event) => {
         event.preventDefault();
-        render(loadHomePage, mainContainer);
+        renderPage(loadHomePage, mainContainer);
     });
 
-    document.getElementById('classes-link').addEventListener('click', () => {
-        render(loadClassesPage, mainContainer);
+    document.getElementById('classes-link').addEventListener('click', (event) => {
+        event.preventDefault();
+        renderPage(loadClassesPage, mainContainer);
     });
 
-    document.getElementById('teachers-link').addEventListener('click', () => {
-        render(loadTeachersPage, mainContainer);
+    document.getElementById('teachers-link').addEventListener('click', (event) => {
+        event.preventDefault();
+        renderPage(loadTeachersPage, mainContainer);
     });
 
-    document.getElementById('students-link').addEventListener('click', () => {
-        render(loadStudentsPage, mainContainer);
+    document.getElementById('students-link').addEventListener('click', (event) => {
+        event.preventDefault();
+        renderPage(loadStudentsPage, mainContainer);
     });
 });

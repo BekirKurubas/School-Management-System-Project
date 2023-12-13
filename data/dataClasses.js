@@ -1,4 +1,4 @@
-export let classes =[
+ let classes =[
     {
       id: 1,
       name: "Full Stack Class",
